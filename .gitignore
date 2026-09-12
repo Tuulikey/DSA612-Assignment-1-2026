@@ -9,3 +9,13 @@ Dependencies.toml
 Config.toml
 # the config files used for testing, Uncomment the following line if you want to commit the test config files
 #!**/tests/Config.toml
+{
+  "files.exclude": {
+    "**/target": true,
+    "**/.ballerina": true
+  },
+  "ballerina.sdk路径": "",
+  "ballerina.home": "",
+  "ballerina-vscode.trace.server": "verbose",
+  "ballerina.enableTelemetry": false
+}
