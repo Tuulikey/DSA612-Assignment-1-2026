@@ -1,0 +1,69 @@
+{
+  "last_build_time": 1788795094505,
+  "last_update_time": 1788795094505,
+  "last_bal_toml_update_time": 1787842112172,
+  "distribution_version": "2201.13.5",
+  "last_modified_time": {
+    "library_service": 1787848938436
+  },
+  "last_build_options": {
+    "testReport": false,
+    "codeCoverage": false,
+    "skipTests": true,
+    "compilationOptions": {
+      "experimental": false,
+      "observabilityIncluded": true,
+      "cloud": "",
+      "dumpGraph": false,
+      "dumpRawGraphs": false
+    }
+  },
+  "src_meta_info": [
+    {
+      "file": "C:\\Users\\USER\\Documents\\GitHub\\1 Assignment\\Library Management System\\modules\\library_service\\Ballerina.toml",
+      "hash": "87e19c032f7ff60837aeac532b44b94ebe972b9fc2a4ff2a8cae1baf063039d6",
+      "size": 139,
+      "lastModifiedTime": 1787842112172
+    },
+    {
+      "file": "C:\\Users\\USER\\Documents\\GitHub\\1 Assignment\\Library Management System\\modules\\library_service\\service.bal",
+      "hash": "abf8ff48dfab902f156b355fe558574fe0cd6d7a1178ee28d60caa8aa923f2e2",
+      "size": 18075,
+      "lastModifiedTime": 1787848938436
+    },
+    {
+      "file": "C:\\Users\\USER\\Documents\\GitHub\\1 Assignment\\Library Management System\\modules\\library_service\\store.bal",
+      "hash": "57c5105e596516a1443edab8698c4f5a69250a1f734282a94193a77541bc6cfd",
+      "size": 7625,
+      "lastModifiedTime": 1787845242320
+    },
+    {
+      "file": "C:\\Users\\USER\\Documents\\GitHub\\1 Assignment\\Library Management System\\modules\\library_service\\types.bal",
+      "hash": "e0877b7a2502c5725d3e34f3c27abf057bfe7e625f4c31f07a457b6cc7d19e87",
+      "size": 2673,
+      "lastModifiedTime": 1787842414180
+    }
+  ],
+  "target_exec_meta_info": {
+    "file": "C:\\Users\\USER\\Documents\\GitHub\\1 Assignment\\Library Management System\\modules\\library_service\\target\\backup\\bin\\library_service.jar",
+    "hash": "a1da49a8b26ae6901f123287bbe4462cb60a5403ee8f13aa8487dd6f9197b2d2",
+    "size": 48001047,
+    "lastModifiedTime": 1788795102295
+  },
+  "settings_meta_info": {
+    "file": "C:\\Users\\USER\\.ballerina\\Settings.toml",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0,
+    "lastModifiedTime": 1785194482308
+  },
+  "ballerina_toml_meta_info": {
+    "file": "C:\\Users\\USER\\Documents\\GitHub\\1 Assignment\\Library Management System\\modules\\library_service\\Ballerina.toml",
+    "hash": "87e19c032f7ff60837aeac532b44b94ebe972b9fc2a4ff2a8cae1baf063039d6",
+    "size": 139,
+    "lastModifiedTime": 1787842112172
+  },
+  "imports": [
+    "ballerina/http",
+    "ballerina/time"
+  ]
+}
