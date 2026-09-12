@@ -13,18 +13,16 @@ tracking.
 > Everything in this repo is designed to be opened in a single IDE window
 > and run with one click — no external services, no databases, no Docker.
 
----
 
 1. Project layout
 
-```
-library-ms/
+library-management system/
 ├── Ballerina.toml                    # workspace root (members = both modules)
 ├── README.md
 ├── start.cmd                         # one-click launcher (Windows .cmd)
 ├── start.ps1                         # one-click launcher (PowerShell)
 ├── smoke.ps1                         # automated smoke test against the service
-├── sample-requests.http              # REST Client / IntelliJ HTTP Client
+├── handles-requests.http              # REST Client
 ├── .vscode/
 │   ├── launch.json                   # debug configurations
 │   ├── tasks.json                    # build / run / graph tasks
@@ -40,17 +38,15 @@ library-ms/
         ├── api.bal                   # http:Client wrapper
         ├── display.bal               # colored output helpers
         └── main.bal                  # menu loop + flows
-```
 
 2. Quick start (IDE)
 
 VS Code
 
 1. Install the "Ballerina" extension (`WSO2.ballerina`).
-2. Open this folder (`File ▸ Open Folder… ▸ library-ms`).
+2. Open this folder (`File ▸ Open Folder… ▸ Library Management System`).
 3. Press `Ctrl+Shift+B` → choose "Ballerina: Build all".
-4. Press `F5` → choose "Run library_service". (Use the "Run library_client"
-   configuration in a second debug session to drive the UI.)
+4. Press `F5` → choose "Run library_service". (Use the "Run library_client" configuration in a second debug session to drive the UI.)
    Or use the "Service + Client (parallel)" compound launch.
 
 
@@ -83,7 +79,7 @@ Then open `http://localhost:8000/index.html`. Stop the static server with
 `Ctrl+C`. The service must remain running separately because the HTML file is
 only the browser interface; it does not start the Ballerina backend.
 
-## 3. What the service exposes
+3. What the service exposes
 
 Base path: `http://localhost:9090/library`
 
@@ -125,7 +121,6 @@ Status codes
 
 4. Data model
 
-```text
 Asset
 ├── assetTag          string        ← unique key
 ├── name              string
@@ -207,9 +202,7 @@ Main Menu
   0 — Exit
 
 
-The client talks to the service over plain HTTP/JSON — it has 'no shared
-types' with the server, so they can evolve independently. The base URL
-(`http://localhost:9090/library`) is at the top of `modules/library_client/api.bal`.
+The client talks to the service over plain HTTP/JSON — it has 'no shared types' with the server, so they can evolve independently. The base URL (`http://localhost:9090/library`) is at the top of `modules/library_client/api.bal`.
 
 7. Testing
 
@@ -223,7 +216,7 @@ powershell -ExecutionPolicy Bypass -File .\smoke.ps1
 
 
 You can also point any REST client at `http://localhost:9090/library` —
-`sample-requests.http` is preloaded with working examples for the
+`handles-requests.http` is preloaded with working examples for the
 VS Code "REST Client" extension and HTTP Client.
 
 8. Notes
