@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Run library_service",
+      "type": "ballerina",
+      "request": "launch",
+      "program": "${workspaceFolder}/modules/library_service",
+      "ballerinaCommand": "bal run"
+    },
+    {
+      "name": "Run library_client",
+      "type": "ballerina",
+      "request": "launch",
+      "program": "${workspaceFolder}/modules/library_client",
+      "ballerinaCommand": "bal run"
+    },
+    {
+      "name": "Run library_service (Java attach)",
+      "type": "java",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": 5005,
+      "preLaunchTask": "Ballerina: Debug service"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Service + Client (parallel)",
+      "configurations": ["Run library_service", "Run library_client"],
+      "stopAll": true
+    }
+  ]
+}
