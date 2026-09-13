@@ -1,5 +1,0 @@
-[workspace]
-members = ["modules/library_service", "modules/library_client"]
-
-[workspace.options]
-observabilityEnabled = true
