@@ -1,6 +1,5 @@
 # DSA612-Assignment-1-2026
 
-Distributed Systems and Applications (DSA612S) — Assignment 1 · Ballerina + Next.js
 
 A two-part distributed systems project: a REST API for tracking library/campus resources across institutions, and a gRPC-based rental accommodation platform with a web frontend.
 
